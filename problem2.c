@@ -17,7 +17,7 @@ int main()
       fib_sum += fib;
 
     fib1 = fib2;
-    fib2 = fib1;
+    fib2 = fib;
     fib = fib1 + fib2;
   }
 
