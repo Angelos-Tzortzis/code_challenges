@@ -1,3 +1,3 @@
 all:
-	gcc -o out problem2.c
+	gcc -o out problem4.c
 	./out
