@@ -4,8 +4,6 @@
   the largest palindrome made from the product of two 3-digit numbers.
 */
 
-// Largest possible number: 999*999 = 998001
-
 #include <stdio.h>
 
 #define LARGEST_NUMBER 999
