@@ -1,2 +1,2 @@
-# Project_Euler
-Solutions to the problems for Project Euler.
+# Code challenges
+Project Euler.
