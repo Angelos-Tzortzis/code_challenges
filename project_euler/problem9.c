@@ -28,6 +28,7 @@ int main()
             {
                 result = a * b * c;
                 printf("Result: %llu.\n\n", result);
+                break;
             }
         }
     }
