@@ -11,28 +11,28 @@
 
 int main()
 {
-  unsigned int goal, current_number = 20, i, count;
+    unsigned int goal, current_number = 20, i, count;
 
-  while (TRUE)
-  {
-    count = 0;
-
-    for (i = 1; i <= DIV; i++)
+    while (TRUE)
     {
-      if (current_number % i == 0)
-        count++;
+        count = 0;
+
+        for (i = 1; i <= DIV; i++)
+        {
+            if (current_number % i == 0)
+                count++;
+        }
+
+        if (count == DIV)
+        {
+            goal = current_number;
+            break;
+        }
+
+        current_number += 20;
     }
 
-    if (count == DIV)
-    {
-      goal = current_number;
-      break;
-    }
+    printf("goal: %d\n", current_number);
 
-    current_number += 20;
-  }
-
-  printf("goal: %d\n", current_number);
-
-  return 0;
+    return 0;
 }

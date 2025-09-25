@@ -14,19 +14,19 @@
 
 int main()
 {
-  int i, sum_of_squares = 0, square_of_sum = 0, final_result;
+	int i, sum_of_squares = 0, square_of_sum = 0, final_result;
 
-  for (i = 1; i <= NUMBER; i++)
-  {
-    sum_of_squares += i*i;
-    square_of_sum += i;
-  }
+	for (i = 1; i <= NUMBER; i++)
+	{
+		sum_of_squares += i * i;
+		square_of_sum += i;
+	}
 
-  square_of_sum *= square_of_sum;
+	square_of_sum *= square_of_sum;
 
-  final_result = square_of_sum-sum_of_squares;
+	final_result = square_of_sum - sum_of_squares;
 
-  printf("%d\n", final_result);
+	printf("%d\n", final_result);
 
-  return 0;
+	return 0;
 }

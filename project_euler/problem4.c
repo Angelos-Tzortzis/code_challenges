@@ -12,34 +12,34 @@ int reverse_number(int);
 
 int main()
 {
-  int i, j, number, max_number = 0;
+    int i, j, number, max_number = 0;
 
-  for (i = 100; i <= LARGEST_NUMBER; i++)
-  {
-    for (j = 100; j <= LARGEST_NUMBER; j++)
+    for (i = 100; i <= LARGEST_NUMBER; i++)
     {
-      number = i * j;
+        for (j = 100; j <= LARGEST_NUMBER; j++)
+        {
+            number = i * j;
 
-      if ((number == reverse_number(number)) && (number > max_number))
-        max_number = number;
+            if ((number == reverse_number(number)) && (number > max_number))
+                max_number = number;
+        }
     }
-  }
 
-  printf("max: %d\n", max_number);
+    printf("max: %d\n", max_number);
 
-  return 0;
+    return 0;
 }
 
 int reverse_number(int number)
 {
-  int reverse = 0, remainder;
+    int reverse = 0, remainder;
 
-  while (number != 0)
-  {
-    remainder = number % 10;
-    reverse = reverse * 10 + remainder;
-    number = number / 10;
-  }
+    while (number != 0)
+    {
+        remainder = number % 10;
+        reverse = reverse * 10 + remainder;
+        number = number / 10;
+    }
 
-  return reverse;
+    return reverse;
 }

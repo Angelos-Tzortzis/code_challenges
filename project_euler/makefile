@@ -1,3 +1,3 @@
 default:
-	gcc -o out problem8.c
+	gcc -o out problem9.c
 	./out

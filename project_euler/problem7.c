@@ -13,43 +13,43 @@ int is_prime(int);
 
 int main()
 {
-  int i, j, current, found, count = 0;
+    int i, j, current, found, count = 0;
 
-  current = 0;
-  while (TRUE)
-  {
-    if (is_prime(current))
+    current = 0;
+    while (TRUE)
     {
-      found = current;
-      count++;
+        if (is_prime(current))
+        {
+            found = current;
+            count++;
+        }
+
+        if (count == NUM)
+            break;
+
+        current++;
     }
 
-    if (count == NUM)
-      break;
+    printf("Prime number %d: %d\n", count, found);
 
-    current++;
-  }
-
-  printf("Prime number %d: %d\n", count, found);
-
-  return 0;
+    return 0;
 }
 
 int is_prime(int number)
 {
-  int i;
+    int i;
 
-  if (number == 0 || number == 1)
-    return FALSE;
+    if (number == 0 || number == 1)
+        return FALSE;
 
-  for (i = 2; i <= number / 2; i++)
-  {
-    if (number % i == 0)
+    for (i = 2; i <= number / 2; i++)
     {
-      return FALSE;
-      break;
+        if (number % i == 0)
+        {
+            return FALSE;
+            break;
+        }
     }
-  }
 
-  return TRUE;
+    return TRUE;
 }

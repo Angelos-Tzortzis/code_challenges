@@ -15,32 +15,32 @@ int is_prime(int);
 
 int main()
 {
-  int i, max_factor;
+	int i, max_factor;
 
-  max_factor = 2;
-  for (i = 3; i < NUMBER; i++)
-  {
-    if (is_prime(i) && ((NUMBER % i) == 0))
-    {
-      printf("%d\n", i);
-      if (i > max_factor)
-        max_factor = i;
-    }
-  }
+	max_factor = 2;
+	for (i = 3; i < NUMBER; i++)
+	{
+		if (is_prime(i) && ((NUMBER % i) == 0))
+		{
+			printf("%d\n", i);
+			if (i > max_factor)
+				max_factor = i;
+		}
+	}
 
-  printf("\nmax: %d\n", max_factor);
+	printf("\nmax: %d\n", max_factor);
 
-  return 0;
+	return 0;
 }
 
 int is_prime(int number)
 {
-  int i;
+	int i;
 
-  for (i = 2; i < number; i++)
-  {
-    if ((number % i) == 0)
-      return FALSE;
-  }
-  return TRUE;
+	for (i = 2; i < number; i++)
+	{
+		if ((number % i) == 0)
+			return FALSE;
+	}
+	return TRUE;
 }
