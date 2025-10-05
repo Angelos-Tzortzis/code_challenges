@@ -1,17 +1,16 @@
 /*
-  The prime factors of 13195 are 5, 7, 13 and 29. What is the largest
-  prime factor of the number 600851475143?
+	The prime factors of 13195 are 5, 7, 13 and 29. What is the largest
+	prime factor of the number 600851475143?
 */
 
 // Code doesn't run correctly but we can find the result.
 
 #include <stdio.h>
+#include "euler_lib.h"
 
 #define NUMBER 600851475143
 #define FALSE 0
 #define TRUE 1
-
-int is_prime(int);
 
 int main()
 {
@@ -31,16 +30,4 @@ int main()
 	printf("\nmax: %d\n", max_factor);
 
 	return 0;
-}
-
-int is_prime(int number)
-{
-	int i;
-
-	for (i = 2; i < number; i++)
-	{
-		if ((number % i) == 0)
-			return FALSE;
-	}
-	return TRUE;
 }

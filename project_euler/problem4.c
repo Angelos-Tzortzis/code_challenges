@@ -1,14 +1,13 @@
 /*
-  A palindromic number reads the same both ways. The largest palindrome
-  made from the product of two 2-digit numbers is 9009 = 91 x 99. Find
-  the largest palindrome made from the product of two 3-digit numbers.
+    A palindromic number reads the same both ways. The largest palindrome
+    made from the product of two 2-digit numbers is 9009 = 91 x 99. Find
+    the largest palindrome made from the product of two 3-digit numbers.
 */
 
 #include <stdio.h>
+#include "euler_lib.h"
 
 #define LARGEST_NUMBER 999
-
-int reverse_number(int);
 
 int main()
 {
@@ -28,18 +27,4 @@ int main()
     printf("max: %d\n", max_number);
 
     return 0;
-}
-
-int reverse_number(int number)
-{
-    int reverse = 0, remainder;
-
-    while (number != 0)
-    {
-        remainder = number % 10;
-        reverse = reverse * 10 + remainder;
-        number = number / 10;
-    }
-
-    return reverse;
 }
